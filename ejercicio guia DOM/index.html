@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">	
+</head>
+<body>
+	<ul class="topnav">
+	  <li><a class="active" href="index.html">1.Calculadora</a></li>
+	  <li><a href="arreglo.html">2.Agregar Elementos Arreglo</a></li>
+	  <li><a href="elemento_input.html">3.Agregar Elemento Input</a></li>
+	</ul>
+		<div id="contenido">
+			<header>
+				<h1>Calculadora Basica</h1>		
+			</header>		
+				<div class="row">
+			 		<div class="col-7" style="text-align: right;">
+					  	<form>
+							<div>
+								<div class="input">
+									<label>Numero 1:</label>
+									<input id="num1" type="text" placeholder="Ingrese numero"  />
+								</div>
+								<div class="input">
+									<label>Numero 2:</label>
+									<input id="num2" type="text" placeholder="Ingrese numero"  />
+								</div>
+								<div class="input">
+									<label>Resultado:</label>
+									<input id="resultado" type="text" placeholder="Resultado calculo"  />
+								</div>							
+								<div class="input">					
+									<input class="boton" type="reset" value="Limpiar"/>
+								</div>
+							</div>			
+						</form>
+					</div>
+			  		<div class="col-5" style="text-align: left;">
+					  	<div class="input">
+							<button class="boton" id="btn_sumar">Sumar</button>			
+						</div>
+						<div class="input">
+							<button class="boton" id="btn_restar">Restar</button>			
+						</div>
+						<div class="input">
+							<button class="boton" id="btn_multiplicar">Multiplicar</button>			
+						</div>
+						<div class="input">
+							<button class="boton" id="btn_dividir">Dividir</button>			
+						</div>
+					</div>  
+				</div>		
+		</div>	
+	<script src="js/javascrip.js"></script>
+</body>
+</html>

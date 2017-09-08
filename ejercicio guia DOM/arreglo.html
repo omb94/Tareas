@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">	
+</head>
+<body>
+	<ul class="topnav">
+	  <li><a href="index.html">1.Calculadora</a></li>
+	  <li><a class="active" href="arreglo.html">2.Agregar Elementos Arreglo</a></li>
+	  <li><a href="elemento_input.html">3.Agregar Elemento Input</a></li>
+	</ul>
+		<div id="contenido">
+			<header>
+				<h1>Agregar Items Arreglo</h1>		
+			</header>		
+				<div class="row">
+			 		<div class="col-7" style="text-align: right;">
+					  	<form>
+							<div class="input">
+							  <label>Nombre:</label>
+							  <input id="nombre" type="text" placeholder="Ingrese numero"  />
+							</div>
+							<div class="input">
+							  <label>Valor:</label>
+							  <input id="valor" type="number" placeholder="Ingrese numero"  />
+							</div>				
+						</form>
+					</div>	
+					<div class="col-5" style="text-align: left;">
+						<div class="input">
+						  <button id="btn_agregar" type="button" class="boton">Agregar</button>
+						</div>
+						<div class="input">
+							<button id="btn_mostrar" type="button" class="boton">Mostrar</button>
+						</div>						
+					</div>		  		
+				</div>	
+			<div id="lista" class="input">
+
+			</div>	
+		</div>	
+	<script src="js/javascrip2.js"></script>
+</body>
+</html>
