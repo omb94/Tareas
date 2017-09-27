@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="page.js"></script>
+</head>
+
+<style type="text/css">
+	.vertical-menu {
+    width: 200px; /* Set a width if you like */
+}
+
+.vertical-menu a {
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+    background-color: #4CAF50; /* Add a green color to the "active/current" link */
+    color: white;
+}
+</style>
+<body>
+	<main id="container">		
+	</main>	
+	<div class="vertical-menu">	  
+	  <a href="/pagina1">pagina 1</a>
+	  <a href="/pagina2">pagina 2</a>
+	  <a href="/pagina3">pagina 3</a>
+	</div>
+	<p></p>
+	<script >
+		page('/pagina1', index)
+		page('/pagina2', about)
+		page('/pagina3', user)
+		page()
+
+		function index(){
+			document.querySelector('p')
+			.textContent = 'Pagina 1'
+		}
+
+		function about(){
+			document.querySelector('p')
+			.textContent = 'Pagina 2'
+		}
+
+		function user(){
+			document.querySelector('p')
+			.textContent = 'Pagina 3'
+		}
+
+	</script>
+</body>
+</html>
